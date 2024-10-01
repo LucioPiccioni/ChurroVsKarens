@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcawi2fjyxlqi"]
+
+[ext_resource type="Script" path="res://language.gd" id="1_drq3t"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 0.986111
+anchor_bottom = 0.987654
+color = Color(0.807843, 0.666667, 0.843137, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Language"
+
+[node name="Language" type="OptionButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Español"
+popup/item_1/text = "English"
+popup/item_1/id = 1
+popup/item_2/text = "Francais"
+popup/item_2/id = 2
+script = ExtResource("1_drq3t")

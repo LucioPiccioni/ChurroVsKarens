@@ -1,0 +1,108 @@
+[gd_scene load_steps=7 format=3 uid="uid://cq8sk5swhopoi"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_vkwdy"]
+[ext_resource type="FontFile" uid="uid://i5ntdcpy3px" path="res://Cream Wish.otf" id="2_y8smf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mvycu"]
+bg_color = Color(0.807843, 0.666667, 0.843137, 1)
+
+[sub_resource type="Theme" id="Theme_2a8hp"]
+Label/styles/normal = SubResource("StyleBoxFlat_mvycu")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8cn2"]
+bg_color = Color(0.533333, 0.678431, 0.482353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.282353, 0.847059, 0.584314, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Theme" id="Theme_n4bc1"]
+Button/styles/normal = SubResource("StyleBoxFlat_l8cn2")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.012
+offset_bottom = 0.223938
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_2a8hp")
+script = ExtResource("1_vkwdy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.97561
+color = Color(0.807843, 0.666667, 0.843137, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+anchor_top = -0.0487805
+anchor_right = 1.01389
+anchor_bottom = 1.04878
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Game designer" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 45
+text = "Game designer: Valentina Pagola"
+
+[node name="Gameplay programmer" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 45
+text = "Main programmers: Lucio Piccioni and Sofia Alvarez"
+
+[node name="Auxiliar Programmer" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 45
+text = "Auxiliar programmer: Valentina Pagola"
+
+[node name="Emotional support 1" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 45
+text = "Canine support: Fraulein and Mora."
+
+[node name="Emotional support 2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 45
+text = "Feline support: Violeta, Deku and Indigo."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.451389
+anchor_top = 0.78811
+anchor_right = 0.549479
+anchor_bottom = 0.884146
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_n4bc1")
+theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_font_sizes/font_size = 35
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

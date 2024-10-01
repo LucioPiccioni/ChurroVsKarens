@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://jkace8q8a7xn"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_80hwa"]
+[ext_resource type="FontFile" uid="uid://i5ntdcpy3px" path="res://Cream Wish.otf" id="2_bdccq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ob3g"]
+bg_color = Color(0.533333, 0.678431, 0.482353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.282353, 0.847059, 0.584314, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Theme" id="Theme_4no6h"]
+Button/styles/normal = SubResource("StyleBoxFlat_4ob3g")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_4no6h")
+script = ExtResource("1_80hwa")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 0.987654
+color = Color(0.807843, 0.666667, 0.843137, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.291667
+anchor_top = -0.697531
+anchor_right = 0.708333
+anchor_bottom = 1.69753
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bdccq")
+theme_override_font_sizes/font_size = 35
+text = "Play"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bdccq")
+theme_override_font_sizes/font_size = 35
+text = "Options"
+
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bdccq")
+theme_override_font_sizes/font_size = 35
+text = "Credits"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bdccq")
+theme_override_font_sizes/font_size = 35
+text = "Quit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

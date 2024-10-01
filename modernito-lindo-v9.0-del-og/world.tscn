@@ -1,0 +1,132 @@
+[gd_scene load_steps=18 format=3 uid="uid://c3j5l4aq0td72"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_d3j1e"]
+[ext_resource type="Script" path="res://world.gd" id="1_f4nq0"]
+[ext_resource type="Texture2D" uid="uid://wvrth32e6uu0" path="res://pacman.heightmap.jpg" id="1_nfr7f"]
+[ext_resource type="PackedScene" uid="uid://bnmke0ra2guv6" path="res://supermarket.tscn" id="2_htok4"]
+[ext_resource type="FontFile" uid="uid://i5ntdcpy3px" path="res://Cream Wish.otf" id="5_v06xb"]
+[ext_resource type="Texture2D" uid="uid://qix6eu6uib65" path="res://Larry_No_Background.png" id="6_0mimm"]
+[ext_resource type="Script" path="res://button.gd" id="7_64yd7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o72da"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eg5m4"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7ojp"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(0, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpimq"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(32, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk4kr"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5nea7"]
+atlas = ExtResource("6_0mimm")
+region = Rect2(96, 128, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hgkik"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o72da")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eg5m4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7ojp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpimq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk4kr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5nea7")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryh0v"]
+size = Vector2(9.99998, 17.3333)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44n34"]
+bg_color = Color(0.533333, 0.678431, 0.482353, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.282353, 0.847059, 0.584314, 1)
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Theme" id="Theme_0wihv"]
+Button/styles/normal = SubResource("StyleBoxFlat_44n34")
+
+[node name="World" type="Node"]
+script = ExtResource("1_f4nq0")
+
+[node name="TileMap" parent="." instance=ExtResource("2_htok4")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 340)
+zoom = Vector2(1.4, 1.4)
+
+[node name="Pacman_heightmap" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(577, 340.125)
+scale = Vector2(1.49318, 0.858187)
+texture = ExtResource("1_nfr7f")
+
+[node name="Robertito" type="CharacterBody2D" parent="."]
+position = Vector2(591, 436)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_d3j1e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Robertito"]
+texture_filter = 1
+position = Vector2(-5.33333, -6.00001)
+scale = Vector2(0.666667, 0.666667)
+sprite_frames = SubResource("SpriteFrames_hgkik")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Robertito"]
+position = Vector2(-5, -3.99994)
+shape = SubResource("RectangleShape2D_ryh0v")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0.784314)
+anchors_preset = -1
+anchor_right = 0.003
+anchor_bottom = 0.012
+offset_left = 194.0
+offset_top = 120.0
+offset_right = 275.544
+offset_bottom = 155.224
+theme = SubResource("Theme_0wihv")
+theme_override_fonts/font = ExtResource("5_v06xb")
+theme_override_font_sizes/font_size = 35
+text = "Back"
+script = ExtResource("7_64yd7")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
