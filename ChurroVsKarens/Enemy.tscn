@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://bq88dfpkcfidc"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_7cexb"]
+[ext_resource type="Texture2D" uid="uid://dutpelaqeu4xl" path="res://Zombie/Idle.png" id="2_pymd0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uf8y8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phhhk"]
+atlas = ExtResource("2_pymd0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrxwu"]
+atlas = ExtResource("2_pymd0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgux3"]
+atlas = ExtResource("2_pymd0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gvdu2"]
+atlas = ExtResource("2_pymd0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irn03"]
+atlas = ExtResource("2_pymd0")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opkly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phhhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrxwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgux3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gvdu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irn03")
+}],
+"loop": true,
+"name": &"idle_Front",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk_Left",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_7cexb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+shape = SubResource("RectangleShape2D_uf8y8")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+navigation_layers = 3
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_opkly")
+animation = &"idle_Front"
+frame_progress = 0.0751004
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
