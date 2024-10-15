@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@export var live = 0
 @export var speed = 200
 @export var cell = 32
 @onready var robertito: AnimatedSprite2D = $AnimatedSprite2D
@@ -17,14 +17,21 @@ func _physics_process(delta):
 	if direction:
 		velocity = direction * speed 
 		
-	#if userButton == "ui_left":
-		#robertito.axis.x * -1
+	if userButton.x < 0:
+		robertito.scale.x = -abs(robertito.scale.x)  # Mira a la izquierda
+	elif userButton.x > 0:
+		robertito.scale.x = abs(robertito.scale.x)   # Mira a la derecha
+	
 	check_teleport()
 	
 	if move_and_slide():
-		robertito.animation = "idle"
+		if live > 0:
+			robertito.animation = "idle"
 	else:
-		robertito.animation = "walk"
+		if live > 0:
+			robertito.animation = "walk"
+	if live <= 0:
+		robertito.animation = "death"
 
 func check_teleport():
 	#FIXME ESTO ESTA HARCODEADO HASTA QUE MUEVAN EL MAPA Y LO ACOMODEN!

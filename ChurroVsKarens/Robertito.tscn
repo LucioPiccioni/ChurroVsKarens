@@ -1,7 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://dtritpvm555g"]
+[gd_scene load_steps=13 format=3 uid="uid://dtritpvm555g"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_3ihnm"]
 [ext_resource type="Texture2D" uid="uid://qix6eu6uib65" path="res://Larry_No_Background.png" id="2_ehjrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mon0w"]
+atlas = ExtResource("2_ehjrj")
+region = Rect2(0, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2olp8"]
+atlas = ExtResource("2_ehjrj")
+region = Rect2(32, 352, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o72da"]
 atlas = ExtResource("2_ehjrj")
@@ -29,6 +37,17 @@ region = Rect2(96, 128, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hgkik"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mon0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2olp8")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_o72da")
@@ -66,13 +85,14 @@ position = Vector2(591, 436)
 scale = Vector2(1.5, 1.5)
 collision_mask = 3
 script = ExtResource("1_3ihnm")
+live = 3
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-5.33333, -6.00001)
 scale = Vector2(0.666667, 0.666667)
 sprite_frames = SubResource("SpriteFrames_hgkik")
-animation = &"idle"
+animation = &"death"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
