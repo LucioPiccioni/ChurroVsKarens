@@ -40,6 +40,700 @@ position = Vector2(577, 340.125)
 scale = Vector2(1.49318, 0.858187)
 texture = ExtResource("1_nfr7f")
 
+[node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
+position = Vector2(694, 279)
+player = NodePath("../Robertito")
+
+[node name="Robertito" parent="." instance=ExtResource("4_rxbsa")]
+
+[node name="Churro" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(208, 416)
+
+[node name="Churro2" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(240, 416)
+
+[node name="Churro3" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 416)
+
+[node name="Churro4" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(304, 416)
+
+[node name="Churro5" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(336, 416)
+
+[node name="Churro6" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(208, 448)
+
+[node name="Churro7" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(208, 480)
+
+[node name="Churro8" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(208, 512)
+
+[node name="Churro9" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(240, 528)
+
+[node name="Churro10" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 528)
+
+[node name="Churro11" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(304, 528)
+
+[node name="Churro12" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(336, 528)
+
+[node name="Churro13" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 528)
+
+[node name="Churro14" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(304, 496)
+
+[node name="Churro15" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 496)
+
+[node name="Churro16" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 464)
+
+[node name="Churro18" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 440)
+
+[node name="Churro19" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 416)
+
+[node name="Churro20" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 448)
+
+[node name="Churro21" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 480)
+
+[node name="Churro22" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 504)
+
+[node name="Churro23" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 464)
+
+[node name="Churro24" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 464)
+
+[node name="Churro25" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 496)
+
+[node name="Churro26" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 528)
+
+[node name="Churro27" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 528)
+
+[node name="Churro28" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 496)
+
+[node name="Churro29" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 464)
+
+[node name="Churro30" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 464)
+
+[node name="Churro31" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 520)
+
+[node name="Churro32" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(528, 520)
+
+[node name="Churro33" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(560, 520)
+
+[node name="Churro34" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(592, 520)
+
+[node name="Churro35" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 520)
+
+[node name="Churro36" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 520)
+
+[node name="Churro37" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 520)
+
+[node name="Churro38" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(704, 488)
+
+[node name="Churro39" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(672, 488)
+
+[node name="Churro40" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(672, 464)
+
+[node name="Churro41" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(704, 464)
+
+[node name="Churro42" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(640, 464)
+
+[node name="Churro43" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(608, 464)
+
+[node name="Churro44" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(576, 464)
+
+[node name="Churro45" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(544, 464)
+
+[node name="Churro46" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(520, 464)
+
+[node name="Churro47" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(736, 464)
+
+[node name="Churro48" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(768, 464)
+
+[node name="Churro49" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(768, 496)
+
+[node name="Churro50" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(768, 528)
+
+[node name="Churro51" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(800, 528)
+
+[node name="Churro52" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(832, 528)
+
+[node name="Churro53" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(832, 496)
+
+[node name="Churro54" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(832, 464)
+
+[node name="Churro55" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(864, 464)
+
+[node name="Churro56" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(864, 496)
+
+[node name="Churro57" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(864, 528)
+
+[node name="Churro58" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(896, 528)
+
+[node name="Churro59" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(928, 528)
+
+[node name="Churro60" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 496)
+
+[node name="Churro61" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 464)
+
+[node name="Churro62" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 432)
+
+[node name="Churro63" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(912, 416)
+
+[node name="Churro64" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(880, 416)
+
+[node name="Churro65" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(848, 416)
+
+[node name="Churro66" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(816, 416)
+
+[node name="Churro67" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 416)
+
+[node name="Churro68" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(768, 440)
+
+[node name="Churro69" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 384)
+
+[node name="Churro70" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 352)
+
+[node name="Churro71" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 320)
+
+[node name="Churro72" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(824, 320)
+
+[node name="Churro73" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(864, 320)
+
+[node name="Churro74" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(896, 320)
+
+[node name="Churro75" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(896, 320)
+
+[node name="Churro76" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(928, 320)
+
+[node name="Churro77" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(960, 320)
+
+[node name="Churro78" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(960, 320)
+
+[node name="Churro79" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 320)
+
+[node name="Churro80" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 320)
+
+[node name="Churro81" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 320)
+
+[node name="Churro82" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 320)
+
+[node name="Churro83" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 320)
+
+[node name="Churro84" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(592, 320)
+
+[node name="Churro85" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(560, 320)
+
+[node name="Churro86" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(528, 320)
+
+[node name="Churro87" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 320)
+
+[node name="Churro88" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 320)
+
+[node name="Churro89" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 320)
+
+[node name="Churro90" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 320)
+
+[node name="Churro91" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 320)
+
+[node name="Churro98" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 352)
+
+[node name="Churro99" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 384)
+
+[node name="Churro100" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 344)
+
+[node name="Churro101" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 344)
+
+[node name="Churro102" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(448, 416)
+
+[node name="Churro103" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(448, 384)
+
+[node name="Churro104" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 344)
+
+[node name="Churro105" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 344)
+
+[node name="Churro106" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(528, 344)
+
+[node name="Churro107" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(560, 344)
+
+[node name="Churro108" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(592, 344)
+
+[node name="Churro109" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 344)
+
+[node name="Churro110" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 344)
+
+[node name="Churro111" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 344)
+
+[node name="Churro112" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 344)
+
+[node name="Churro113" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 344)
+
+[node name="Churro114" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 368)
+
+[node name="Churro115" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(480, 384)
+
+[node name="Churro116" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(480, 416)
+
+[node name="Churro117" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(512, 416)
+
+[node name="Churro118" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(544, 416)
+
+[node name="Churro119" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(576, 400)
+
+[node name="Churro120" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(608, 400)
+
+[node name="Churro121" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(616, 424)
+
+[node name="Churro122" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(544, 440)
+
+[node name="Churro123" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(512, 440)
+
+[node name="Churro124" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(640, 400)
+
+[node name="Churro125" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(648, 424)
+
+[node name="Churro126" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(680, 424)
+
+[node name="Churro127" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 400)
+
+[node name="Churro128" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(664, 400)
+
+[node name="Churro129" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 296)
+
+[node name="Churro130" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 296)
+
+[node name="Churro131" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 296)
+
+[node name="Churro132" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 296)
+
+[node name="Churro133" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 296)
+
+[node name="Churro134" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 296)
+
+[node name="Churro135" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(592, 296)
+
+[node name="Churro136" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(560, 296)
+
+[node name="Churro137" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(528, 296)
+
+[node name="Churro138" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 296)
+
+[node name="Churro139" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 296)
+
+[node name="Churro140" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 296)
+
+[node name="Churro141" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 296)
+
+[node name="Churro142" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 296)
+
+[node name="Churro143" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 264)
+
+[node name="Churro144" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 264)
+
+[node name="Churro145" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 264)
+
+[node name="Churro146" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 264)
+
+[node name="Churro147" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(496, 272)
+
+[node name="Churro148" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(528, 272)
+
+[node name="Churro149" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(560, 272)
+
+[node name="Churro150" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(592, 272)
+
+[node name="Churro151" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 272)
+
+[node name="Churro152" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 272)
+
+[node name="Churro153" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 272)
+
+[node name="Churro154" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 272)
+
+[node name="Churro155" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 272)
+
+[node name="Churro156" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 272)
+
+[node name="Churro157" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 248)
+
+[node name="Churro158" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 248)
+
+[node name="Churro159" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 248)
+
+[node name="Churro160" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 248)
+
+[node name="Churro161" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 240)
+
+[node name="Churro162" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 240)
+
+[node name="Churro163" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(432, 240)
+
+[node name="Churro164" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(464, 240)
+
+[node name="Churro165" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 224)
+
+[node name="Churro166" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 224)
+
+[node name="Churro167" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 224)
+
+[node name="Churro168" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 224)
+
+[node name="Churro169" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 224)
+
+[node name="Churro170" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 200)
+
+[node name="Churro171" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 200)
+
+[node name="Churro172" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 176)
+
+[node name="Churro173" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 176)
+
+[node name="Churro174" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(784, 152)
+
+[node name="Churro175" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(752, 152)
+
+[node name="Churro176" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(816, 224)
+
+[node name="Churro177" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(848, 224)
+
+[node name="Churro178" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(880, 224)
+
+[node name="Churro179" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(912, 224)
+
+[node name="Churro180" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 224)
+
+[node name="Churro181" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 200)
+
+[node name="Churro182" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(912, 200)
+
+[node name="Churro183" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(912, 176)
+
+[node name="Churro184" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 176)
+
+[node name="Churro185" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(944, 152)
+
+[node name="Churro186" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(912, 152)
+
+[node name="Churro187" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(880, 144)
+
+[node name="Churro188" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(848, 144)
+
+[node name="Churro189" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(816, 144)
+
+[node name="Churro190" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(816, 144)
+
+[node name="Churro191" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(720, 144)
+
+[node name="Churro192" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(688, 144)
+
+[node name="Churro193" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(656, 144)
+
+[node name="Churro194" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(624, 144)
+
+[node name="Churro195" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(616, 168)
+
+[node name="Churro196" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(616, 200)
+
+[node name="Churro197" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(616, 232)
+
+[node name="Churro198" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(648, 232)
+
+[node name="Churro199" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(584, 232)
+
+[node name="Churro200" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(552, 232)
+
+[node name="Churro201" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(520, 232)
+
+[node name="Churro202" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(488, 232)
+
+[node name="Churro203" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(536, 200)
+
+[node name="Churro204" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(568, 200)
+
+[node name="Churro205" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(536, 176)
+
+[node name="Churro206" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(536, 152)
+
+[node name="Churro207" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(504, 144)
+
+[node name="Churro208" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(472, 144)
+
+[node name="Churro209" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(440, 144)
+
+[node name="Churro210" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(408, 144)
+
+[node name="Churro211" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(376, 144)
+
+[node name="Churro212" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(344, 144)
+
+[node name="Churro213" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(312, 144)
+
+[node name="Churro219" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(216, 176)
+
+[node name="Churro220" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(248, 176)
+
+[node name="Churro221" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(248, 208)
+
+[node name="Churro222" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(216, 208)
+
+[node name="Churro223" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(216, 232)
+
+[node name="Churro224" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(248, 232)
+
+[node name="Churro225" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(280, 224)
+
+[node name="Churro226" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(312, 224)
+
+[node name="Churro227" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(344, 224)
+
+[node name="Churro228" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 208)
+
+[node name="Churro229" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 208)
+
+[node name="Churro230" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(400, 176)
+
+[node name="Churro231" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(368, 176)
+
+[node name="Churro92" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(336, 320)
+
+[node name="Churro93" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(304, 320)
+
+[node name="Churro94" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(272, 320)
+
+[node name="Churro95" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(240, 320)
+
+[node name="Churro96" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(208, 320)
+
+[node name="Churro97" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(176, 320)
+
+[node name="Churro17" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(304, 464)
+
+[node name="Score" type="Label" parent="."]
+offset_left = 416.0
+offset_top = 80.0
+offset_right = 753.0
+offset_bottom = 217.0
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0.784314)
 anchors_preset = -1
@@ -54,24 +748,5 @@ theme_override_fonts/font = ExtResource("5_v06xb")
 theme_override_font_sizes/font_size = 35
 text = "Back"
 script = ExtResource("7_64yd7")
-
-[node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(694, 279)
-player = NodePath("../Robertito")
-
-[node name="Robertito" parent="." instance=ExtResource("4_rxbsa")]
-
-[node name="Churro" parent="." instance=ExtResource("8_e7hck")]
-position = Vector2(456, 302)
-
-[node name="Score" type="Label" parent="."]
-offset_left = 244.0
-offset_top = 85.0
-offset_right = 893.0
-offset_bottom = 292.0
-theme_override_font_sizes/font_size = 100
-text = "HOLUS"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
