@@ -18,8 +18,11 @@ func _physics_process(delta):
 	if direction:
 		velocity = direction * speed 
 		
-	#if userButton == "ui_left":
-		#robertito.axis.x * -1
+	if userButton.x < 0:
+		robertito.scale.x = -abs(robertito.scale.x)  # Mira a la izquierda
+	elif userButton.x > 0:
+		robertito.scale.x = abs(robertito.scale.x)   # Mira a la derecha
+	
 	check_teleport()
 	
 	if move_and_slide():
@@ -28,7 +31,6 @@ func _physics_process(delta):
 	else:
 		if live > 0:
 			robertito.animation = "walk"
-	
 	if live <= 0:
 		robertito.animation = "death"
 
