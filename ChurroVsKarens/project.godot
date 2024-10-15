@@ -14,3 +14,12 @@ config/name="Churros"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalScore="*res://global_score.gd"
+
+[global_group]
+
+Enemy="malo"
+Player="Robertito <3"

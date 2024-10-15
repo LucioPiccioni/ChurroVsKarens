@@ -11,7 +11,6 @@ extends CharacterBody2D
  #it now works hand in hand with that velocity variable.
 func _physics_process(delta):
 	var userButton = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	print(velocity)
 	
 	if userButton:
 		direction = userButton

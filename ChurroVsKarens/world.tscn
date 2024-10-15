@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3j5l4aq0td72"]
+[gd_scene load_steps=11 format=3 uid="uid://c3j5l4aq0td72"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_f4nq0"]
 [ext_resource type="Texture2D" uid="uid://wvrth32e6uu0" path="res://pacman.heightmap.jpg" id="1_nfr7f"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dtritpvm555g" path="res://Robertito.tscn" id="4_rxbsa"]
 [ext_resource type="FontFile" uid="uid://i5ntdcpy3px" path="res://Cream Wish.otf" id="5_v06xb"]
 [ext_resource type="Script" path="res://button.gd" id="7_64yd7"]
+[ext_resource type="PackedScene" uid="uid://cuxgkoek8h4lc" path="res://churro.tscn" id="8_e7hck"]
 [ext_resource type="PackedScene" uid="uid://bq88dfpkcfidc" path="res://Enemy.tscn" id="8_hfpkr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44n34"]
@@ -59,5 +60,18 @@ position = Vector2(694, 279)
 player = NodePath("../Robertito")
 
 [node name="Robertito" parent="." instance=ExtResource("4_rxbsa")]
+
+[node name="Churro" parent="." instance=ExtResource("8_e7hck")]
+position = Vector2(456, 302)
+
+[node name="Score" type="Label" parent="."]
+offset_left = 244.0
+offset_top = 85.0
+offset_right = 893.0
+offset_bottom = 292.0
+theme_override_font_sizes/font_size = 100
+text = "HOLUS"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

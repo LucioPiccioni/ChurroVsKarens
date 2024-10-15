@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuxgkoek8h4lc"]
+
+[ext_resource type="Texture2D" uid="uid://bisv7kwxrxqwn" path="res://churro.png" id="1_sfpcc"]
+[ext_resource type="Script" path="res://churro.gd" id="2_o4bby"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gr1j"]
+size = Vector2(32, 32)
+
+[node name="Churro" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_sfpcc")
+script = ExtResource("2_o4bby")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_6gr1j")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
