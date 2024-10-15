@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cq8sk5swhopoi"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_vkwdy"]
-[ext_resource type="FontFile" uid="uid://i5ntdcpy3px" path="res://Cream Wish.otf" id="2_y8smf"]
+[ext_resource type="FontFile" uid="uid://bqc06pdyfl72" path="res://Daydream.ttf" id="2_ywms2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mvycu"]
 bg_color = Color(0.807843, 0.666667, 0.843137, 1)
@@ -54,53 +54,57 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+alignment = 1
 
 [node name="Game designer" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_y8smf")
-theme_override_font_sizes/font_size = 45
+theme_override_fonts/font = ExtResource("2_ywms2")
+theme_override_font_sizes/font_size = 30
 text = "Game designer: Valentina Pagola"
+horizontal_alignment = 1
 
 [node name="Gameplay programmer" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_y8smf")
-theme_override_font_sizes/font_size = 45
-text = "Main programmers: Lucio Piccioni and Sofia Alvarez"
+theme_override_fonts/font = ExtResource("2_ywms2")
+theme_override_font_sizes/font_size = 30
+text = "Main programmers: Lucio Piccioni and 
+Sofia Alvarez"
+horizontal_alignment = 1
 
 [node name="Auxiliar Programmer" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_y8smf")
-theme_override_font_sizes/font_size = 45
+theme_override_fonts/font = ExtResource("2_ywms2")
+theme_override_font_sizes/font_size = 30
 text = "Auxiliar programmer: Valentina Pagola"
 
 [node name="Emotional support 1" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_y8smf")
-theme_override_font_sizes/font_size = 45
+theme_override_fonts/font = ExtResource("2_ywms2")
+theme_override_font_sizes/font_size = 30
 text = "Canine support: Fraulein and Mora."
 
 [node name="Emotional support 2" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_y8smf")
-theme_override_font_sizes/font_size = 45
+theme_override_fonts/font = ExtResource("2_ywms2")
+theme_override_font_sizes/font_size = 30
 text = "Feline support: Violeta, Deku and Indigo."
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.451389
+anchor_left = 0.431424
 anchor_top = 0.78811
-anchor_right = 0.549479
-anchor_bottom = 0.884146
+anchor_right = 0.58941
+anchor_bottom = 0.890244
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_n4bc1")
-theme_override_fonts/font = ExtResource("2_y8smf")
+theme_override_fonts/font = ExtResource("2_ywms2")
 theme_override_font_sizes/font_size = 35
 text = "Back"
 metadata/_edit_use_anchors_ = true

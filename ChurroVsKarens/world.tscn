@@ -39,8 +39,6 @@ position = Vector2(577, 340.125)
 scale = Vector2(1.49318, 0.858187)
 texture = ExtResource("1_nfr7f")
 
-[node name="Robertito" parent="." instance=ExtResource("4_rxbsa")]
-
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0.784314)
 anchors_preset = -1
@@ -59,5 +57,7 @@ script = ExtResource("7_64yd7")
 [node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
 position = Vector2(694, 279)
 player = NodePath("../Robertito")
+
+[node name="Robertito" parent="." instance=ExtResource("4_rxbsa")]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
