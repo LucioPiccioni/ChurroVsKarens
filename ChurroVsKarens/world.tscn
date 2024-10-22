@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cuxgkoek8h4lc" path="res://churro.tscn" id="8_e7hck"]
 [ext_resource type="PackedScene" uid="uid://bq88dfpkcfidc" path="res://Enemy.tscn" id="8_hfpkr"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44n34"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3fs4t"]
 bg_color = Color(0.533333, 0.678431, 0.482353, 1)
 border_width_left = 5
 border_width_top = 5
@@ -23,7 +23,7 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [sub_resource type="Theme" id="Theme_0wihv"]
-Button/styles/normal = SubResource("StyleBoxFlat_44n34")
+Button/styles/normal = SubResource("StyleBoxFlat_3fs4t")
 
 [node name="World" type="Node"]
 script = ExtResource("1_f4nq0")
@@ -948,7 +948,7 @@ scale = Vector2(0.333333, 0.333333)
 position = Vector2(-191.333, 18.6667)
 scale = Vector2(0.333333, 0.333333)
 
-[node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
+[node name="Enemy" parent="." node_paths=PackedStringArray("player") groups=["Enemy"] instance=ExtResource("8_hfpkr")]
 position = Vector2(736, 272)
 player = NodePath("../Robertito")
 
@@ -978,29 +978,5 @@ theme_override_fonts/font = ExtResource("5_v06xb")
 theme_override_font_sizes/font_size = 35
 text = "Back"
 script = ExtResource("7_64yd7")
-
-[node name="Enemy2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(936, 160)
-player = NodePath("../Robertito")
-
-[node name="Enemy3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(304, 504)
-player = NodePath("../Robertito")
-
-[node name="Enemy4" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(792, 416)
-player = NodePath("../Robertito")
-
-[node name="Enemy5" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(456, 368)
-player = NodePath("../Robertito")
-
-[node name="Enemy6" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(896, 176)
-player = NodePath("../Robertito")
-
-[node name="Enemy7" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_hfpkr")]
-position = Vector2(392, 240)
-player = NodePath("../Robertito")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

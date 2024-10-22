@@ -185,8 +185,10 @@ texture = ExtResource("1_66pf7")
 8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 0, 8, 0, 8, -8)
 9:10/0 = 0
 11:11/0 = 0
+11:11/0/modulate = Color(1, 0.803922, 0.596078, 0)
 11:11/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_4ofnf")
 0:11/0 = 0
+0:11/0/modulate = Color(1, 1, 1, 0)
 
 [sub_resource type="TileSet" id="TileSet_vy41u"]
 physics_layer_0/collision_layer = 1
@@ -208,7 +210,6 @@ pattern_2 = SubResource("TileMapPattern_p80lb")
 [node name="Level2" type="Node"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

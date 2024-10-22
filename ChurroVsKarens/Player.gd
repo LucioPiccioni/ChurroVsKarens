@@ -1,5 +1,4 @@
 extends CharacterBody2D
-@export var live = 0
 @export var speed = 200
 @export var cell = 32
 @onready var robertito: AnimatedSprite2D = $AnimatedSprite2D
@@ -11,7 +10,8 @@ extends CharacterBody2D
  #it now works hand in hand with that velocity variable.
 func _physics_process(delta):
 	var userButton = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	
+	if robertito.is_in_group("Enemy"):
+		GlobalScore.life -= 1
 	if userButton:
 		direction = userButton
 	if direction:
@@ -24,13 +24,14 @@ func _physics_process(delta):
 	
 	check_teleport()
 	
+	
 	if move_and_slide():
-		if live > 0:
+		if GlobalScore.life > 0:
 			robertito.animation = "idle"
 	else:
-		if live > 0:
+		if GlobalScore.life > 0:
 			robertito.animation = "walk"
-	if live <= 0:
+	if GlobalScore.life <= 0:
 		robertito.animation = "death"
 
 func check_teleport():
